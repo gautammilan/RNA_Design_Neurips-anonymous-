@@ -10,7 +10,7 @@ Batched inference for RNA LM with optional fast constrained decoding.
   * flavor-specific default model paths
   * test_path instead of input_path
   * if output_path is empty, derive it from test_path (e.g., ./decoding_results/foo_slrl.jsonl)
-  * support Hugging Face repo subfolders, e.g. Milanmg/LLM-RNA-Design-2025/model/SL+RL
+  * support Hugging Face repo subfolders, e.g.Anonymous202606/LLM-RNA-Design-2026/model/SL+RL
 """
 
 import argparse
@@ -76,13 +76,13 @@ def parse_args():
     parser.add_argument(
         "--sl_model_path",
         type=str,
-        default="Milanmg/LLM-RNA-Design-2026/model/SL",
+        default="Anonymous202606/LLM-RNA-Design-2026/model/SL",
         help="Default model path for SL-only model.",
     )
     parser.add_argument(
         "--slrl_model_path",
         type=str,
-        default="Milanmg/LLM-RNA-Design-2026/model/SL+RL",
+        default="Anonymous202606/LLM-RNA-Design-2026/model/SL+RL",
         help="Default model path for SL+RL model.",
     )
 
@@ -210,8 +210,8 @@ def build_task_list(records, n_repeats: int, existing: Counter, constrained_ids)
 def split_repo_and_subfolder(path_or_repo: str):
     """
     Take something like:
-      - 'Milanmg/LLM-RNA-Design-2025'            -> ('Milanmg/LLM-RNA-Design-2025', None)
-      - 'Milanmg/LLM-RNA-Design-2025/model/SL'  -> ('Milanmg/LLM-RNA-Design-2025', 'model/SL')
+      - 'Anonymous202606/LLM-RNA-Design-2026'            -> ('Anonymous202606/LLM-RNA-Design-2026', None)
+      - 'Anonymous202606/LLM-RNA-Design-2026/model/SL'  -> ('Anonymous202606/LLM-RNA-Design-2026', 'model/SL')
     i.e., first two components are the HF repo id, the rest (if any) is subfolder.
     """
     parts = path_or_repo.split("/")
