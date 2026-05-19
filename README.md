@@ -1,7 +1,7 @@
 # RNA-Design-LM
 RNA-Design-LM is a research codebase for designing RNA sequences with autoregressive language models. Instead of solving each RNA inverse-folding instance from scratch with combinatorial search, we train a conditional LM to map target secondary structures (dot–bracket strings) directly to RNA sequences, combining supervised learning on solver-generated structure–sequence pairs with reinforcement learning that optimizes thermodynamic folding metrics such as Boltzmann probability, ensemble defect, and MFE uniqueness. Constrained decoding enforces base-pairing rules during generation so that all sampled sequences are structurally valid by construction, enabling fast, amortized RNA design at scale.
 
-## Note: All the training data and models for Supervised Learning and RL are available on the Hugging Face Hub. See: [https://huggingface.co/Milanmg/LLM-RNA-Design-2026/tree/main]
+## Note: All the training data and models for Supervised Learning and RL are available on the Hugging Face Hub. See: [https://huggingface.co/Anonymous202606/LLM-RNA-Design-2026]
 
 ## 1. Dependency
 pip3 install -r requirements.txt
@@ -27,10 +27,10 @@ If empty, a default is derived as
 ``--model_flavor``: {sl, slrl} Which trained model flavor to use: sl = supervised-only model, slrl = SL+RL model (default) \
 ``--sl_model_path``:
 Default HF path for the SL model
-(default: Milanmg/LLM-RNA-Design-2025/model/SL) \
+(default: Anonymous202606/LLM-RNA-Design-2026/model/SL) \
 ``--slrl_model_path``:
 Default HF path for the SL+RL model
-(default: Milanmg/LLM-RNA-Design-2025/model/SL+RL) 
+(default: Anonymous202606/LLM-RNA-Design-2026/model/SL+RL) 
 
 
 #### Sampling / decoding 
@@ -67,10 +67,10 @@ Should see something like this:
 ```
 python constrained_decoding.py   --test_path ./test/eterna100.jsonl   --model_flavor slrl   --n_repeats 1000   --
 batch_size 1024   --do_sample   --temp 2   --constrained_decode 
-13:18:26 INFO Using model_flavor=slrl, model_path=Milanmg/LLM-RNA-Design-2025/model/SL+RL
-13:18:26 INFO Resolved repo_id='Milanmg/LLM-RNA-Design-2025', subfolder='model/SL+RL'
+13:18:26 INFO Using model_flavor=slrl, model_path=Anonymous202606/LLM-RNA-Design-2026/model/SL+RL
+13:18:26 INFO Resolved repo_id='Anonymous202606/LLM-RNA-Design-2026', subfolder='model/SL+RL'
 13:18:26 INFO No --output_path provided. Using derived path from test_path: ./eterna100_decoding_results.jsonl
-13:18:26 INFO Loading model & tokenizer from repo_id='Milanmg/LLM-RNA-Design-2025', subfolder='model/SL+RL'
+13:18:26 INFO Loading model & tokenizer from repo_id='Anonymous202606/LLM-RNA-Design-2026', subfolder='model/SL+RL'
 13:18:28 INFO We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
 13:18:29 INFO Loaded 100 test records from ./test/eterna100.jsonl
 13:18:29 INFO Resume enabled: found 0 existing samples across 0 unique ids in ./eterna100_decoding_results.jsonl
