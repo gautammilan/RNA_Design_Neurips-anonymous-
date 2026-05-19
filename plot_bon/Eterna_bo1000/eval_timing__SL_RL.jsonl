@@ -1,0 +1,9 @@
+{"desc": "Evaluating eterna100_slrl.jsonl (SL+RL)", "batch_index": 1, "num_batches": 9, "num_pairs": 10000, "total_time_sec": 116.12066340446472, "time_per_seq_sec": 0.011612066340446472}
+{"desc": "Evaluating eterna100_slrl.jsonl (SL+RL)", "batch_index": 2, "num_batches": 9, "num_pairs": 10000, "total_time_sec": 101.93582916259766, "time_per_seq_sec": 0.010193582916259766}
+{"desc": "Evaluating eterna100_slrl.jsonl (SL+RL)", "batch_index": 3, "num_batches": 9, "num_pairs": 10000, "total_time_sec": 143.99255681037903, "time_per_seq_sec": 0.014399255681037903}
+{"desc": "Evaluating eterna100_slrl.jsonl (SL+RL)", "batch_index": 4, "num_batches": 9, "num_pairs": 10000, "total_time_sec": 39.96783971786499, "time_per_seq_sec": 0.003996783971786499}
+{"desc": "Evaluating eterna100_slrl.jsonl (SL+RL)", "batch_index": 5, "num_batches": 9, "num_pairs": 10000, "total_time_sec": 68.73181915283203, "time_per_seq_sec": 0.006873181915283203}
+{"desc": "Evaluating eterna100_slrl.jsonl (SL+RL)", "batch_index": 6, "num_batches": 9, "num_pairs": 10000, "total_time_sec": 53.487022161483765, "time_per_seq_sec": 0.005348702216148376}
+{"desc": "Evaluating eterna100_slrl.jsonl (SL+RL)", "batch_index": 7, "num_batches": 9, "num_pairs": 10000, "total_time_sec": 10.029624938964844, "time_per_seq_sec": 0.0010029624938964843}
+{"desc": "Evaluating eterna100_slrl.jsonl (SL+RL)", "batch_index": 8, "num_batches": 9, "num_pairs": 10000, "total_time_sec": 15.769186735153198, "time_per_seq_sec": 0.0015769186735153198}
+{"desc": "Evaluating eterna100_slrl.jsonl (SL+RL)", "batch_index": 9, "num_batches": 9, "num_pairs": 8610, "total_time_sec": 44.55316495895386, "time_per_seq_sec": 0.005174583618926116}

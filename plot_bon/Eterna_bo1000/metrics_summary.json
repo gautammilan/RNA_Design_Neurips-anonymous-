@@ -1,0 +1,29 @@
+{
+  "SOTA": {
+    "solve_rate": 0.77,
+    "structural_dist": 4.57,
+    "ensemble_defect": 0.04294511,
+    "probability": 0.58050877,
+    "umfe_rate": 0.73,
+    "probability_gmean": 0.5288077313219407,
+    "probability_gmean_count": 79
+  },
+  "SL": {
+    "solve_rate": 0.69,
+    "structural_dist": 6.74,
+    "ensemble_defect": 0.05563587999999999,
+    "probability": 0.5534910099999999,
+    "umfe_rate": 0.67,
+    "probability_gmean": 0.3820273879242613,
+    "probability_gmean_count": 78
+  },
+  "SL+RL": {
+    "solve_rate": 0.73,
+    "structural_dist": 4.15,
+    "ensemble_defect": 0.045854650000000004,
+    "probability": 0.5716031,
+    "umfe_rate": 0.69,
+    "probability_gmean": 0.31603191234412775,
+    "probability_gmean_count": 82
+  }
+}
